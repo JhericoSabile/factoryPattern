@@ -1,16 +1,12 @@
 package factoryPattern;
 import java.util.Scanner;
-
 public class Clinic {
     public static void main(String[] args){
-
         Scanner input = new Scanner(System.in);
-
         while(true) {
             System.out.println("[1] Dog");
             System.out.println("[2] Cat");
             System.out.println("[3] Exit");
-
             System.out.print("\nChoose your pet number: ");
             Integer choice = input.nextInt();
 
@@ -45,16 +41,13 @@ public class Clinic {
                     System.out.println("Play mode: " + petFile.getPet().play());
                     System.out.println("Cat lives: " + ((Cat) pet).getNoOfLives());
                     System.out.println();
-
                     break;
                 case 3:
                     System.out.print("Exit: ");
-                    input.close();
                     return;
                 default:
                     System.out.println("Invalid input try again");
                     System.out.println();
-
             }
 
         }
