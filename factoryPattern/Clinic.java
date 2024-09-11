@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Clinic {
     public static void main(String[] args){
 
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scannner(System.in);
 
         System.out.println("[1] Dog");
         System.out.println("[2] Cat");
